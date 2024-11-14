@@ -1,0 +1,7 @@
+@mixin for-mobile {
+    @content;
+}
+
+@mixin for-desktop {
+    @media (min-width: 1240px) { @content; }
+}
