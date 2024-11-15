@@ -1,0 +1,8 @@
+@import '../assets/mixins.scss';
+
+.main-container {
+    @include for-mobile;
+    @include for-desktop;
+    max-width: 100%;
+    min-width: 335px;
+}

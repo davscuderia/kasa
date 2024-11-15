@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../../components/Banner';
-import aboutBackground from '../../assets/about-banner.png';
+import aboutBackground from '../../assets/about-banner.webp';
 
 function About() {
     return (

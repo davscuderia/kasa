@@ -1,11 +1,8 @@
+@import './assets/mixins.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     font-family:"Montserrat" ;
 }
 body {
-    background-color: #F6F6F6;
-}
-header, main {
-    max-width: 1240px;
-    margin: 0 auto;
+    @include main-container;
 }

@@ -14,4 +14,4 @@ function Banner ({ backgroundImage, slogan, isAbout }) {
     )
 }
 
-export default Banner;
+export default Banner

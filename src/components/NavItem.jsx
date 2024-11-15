@@ -12,4 +12,4 @@ function NavItem({ to, label }) {
     )
 }
 
-export default NavItem;
+export default NavItem

@@ -1,6 +1,7 @@
 import React from "react"
 import Banner from "../../components/Banner"
-import homeBannerImage from '../../assets/home-banner.png'
+import homeBannerImage from '../../assets/home-banner.webp'
+import CardList from "../../components/CardList"
 
 function Home() {
     return (
@@ -9,7 +10,8 @@ function Home() {
                 backgroundImage={homeBannerImage}
                 slogan="Chez vous, partout et ailleurs"
             />    
-            <p>Ma super page d'accueil</p>
+            <CardList />
+
         </div>
     )
 }
