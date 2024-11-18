@@ -2,30 +2,29 @@ $text-color-default: #FFFFFF;
 /*$background-color-default: #FFFFFF;*/
 
 @mixin for-mobile {
-    color: $text-color-default;
-    /*background-color: $background-color-default;*/
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
     @content;
+        color: $text-color-default;
+        /*background-color: $background-color-default;*/
+        padding-top: 20px;
+        /*padding-left: 20px;
+        padding-right: 20px;*/
 }
 
 @mixin for-desktop {
-    @media (min-width: 1240px) {
+    @media (min-width: 1440px) {
         @content;
             color: $text-color-default;
             /*background-color: $background-color-default;*/
             padding-top: 45px;
             padding-left: 100px;
             padding-right: 100px;
-            width: 340px;
-            height: 340px;
+            
     }
 }
 
-@mixin main-container {
+/*@mixin main-container {
     max-width: 1240px;
     margin: 0 auto;
     @include for-mobile;
     @include for-desktop;
-}
+}*/
