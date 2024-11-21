@@ -11,13 +11,13 @@ $text-color-default: #FFFFFF;
 }
 
 @mixin for-desktop {
-    @media (min-width: 1440px) {
+    @media (min-width: 1240px) {
         @content;
             color: $text-color-default;
             /*background-color: $background-color-default;*/
-            padding-top: 45px;
-            padding-left: 100px;
-            padding-right: 100px;
+            /*padding-top: 45px;*/
+            /*padding-left: 100px;*/
+            /*padding-right: 100px;*/
             
     }
 }

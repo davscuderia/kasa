@@ -2,6 +2,7 @@ import React from "react"
 import Banner from "../../components/Banner"
 import homeBannerImage from '../../assets/home-banner.webp'
 import CardList from "../../components/CardList"
+import './style.scss'
 
 function Home() {
     return (

@@ -1,0 +1,36 @@
+@import '../../assets/mixins.scss';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    max-width: 100%;
+    height: 209px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    
+    .copyright {
+        padding-top: 12px;
+
+        &.copyright-desktop {
+            display: none;
+        }
+    }    
+
+    @include for-desktop {
+        .footer-logo {
+            margin-top: 60px;
+        }
+        .copyright {
+            padding-top: 30px;
+
+            &.copyright-mobile {
+            display: none;
+            }
+            &.copyright-desktop {
+            display: block;
+            }
+        }
+    }
+}    
