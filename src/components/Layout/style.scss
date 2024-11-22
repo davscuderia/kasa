@@ -1,8 +1,8 @@
 @import '../../assets/mixins.scss';
 
 .main-container {
-    @include for-mobile;
-    @include for-desktop;
     
+    @include responsive-card;
+    @media (min-width: 1240px){}
     
 }

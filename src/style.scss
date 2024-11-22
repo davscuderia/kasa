@@ -6,4 +6,10 @@
 }
 body {
     margin: 0;
+    @media (min-width: 1240px) {
+        .header, .main-container {
+        padding-left: 80px;
+        padding-right: 80px;
+        }
+    }
 }

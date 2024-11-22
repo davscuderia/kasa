@@ -31,7 +31,7 @@
         }
     }
 
-    @include for-desktop {
+    @media (min-width: 1240px) {
         height: 68px;
         
         &__logo {

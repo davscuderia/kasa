@@ -4,14 +4,15 @@
     height: (3 * 335px); /*calcul en fonction de la hauteur des vignettes */
     overflow-y: auto; /*défilement vertical*/
     scroll-snap-type: y mandatory; /*alignement auto au début du conteneur lors du défilement*/
-    
-    @include for-desktop {
+    border-radius: 20px;
+
+    @media (min-width: 1240px) {
         height: calc(2 * 340px + 50px);
         background-color: #f6f6f6;
-        padding-top: 20px;
+        scroll-snap-align: center;
         padding-left: 40px;
         padding-right: 40px;
-       
+        padding-top: 20px;
     }
 }
 
@@ -20,14 +21,11 @@
     flex-direction: column;
     
 
-    @include for-desktop {
+    @media (min-width: 1240px) {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-gap: 50px 60px;
         grid-auto-rows: minmax(340px, auto);
-    }
-}
 
-.card {
-    scroll-snap-align: start; /* s'assure que chaque cartes sont bien positionnée au départ*/
+    }
 }

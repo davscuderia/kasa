@@ -1,0 +1,67 @@
+@import '../../assets/mixins.scss';
+
+.logement-detail {
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    margin: 0 auto;
+
+    .logement-pictures {
+        img {
+            width: 100%;
+            height: 255px;
+            border-radius: 10px;
+            
+            @media (min-width: 1240px) {
+                height: 415px;
+            }
+        }
+    }
+    .logement-info {
+        h2 {
+            color: #FF6060;
+            font-size: 18px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .tags {
+            height: 18px;
+            width: 84px;
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+          
+            .tag {
+                background-color: #FF6060;
+                color: white;
+                padding: 4px 15px;
+                border-radius: 10px;
+                font-size: 10px;
+                font-weight: 700;
+            }
+        }
+    }
+    .logement-host {
+        margin-left: auto;
+        .host-info {
+            align-items: center;
+            display: flex;
+            font-weight: 500;
+            color: #FF6060;
+            font-size: 14px;
+            p {
+               margin-right: 10px;
+            }
+            img {
+                border-radius: 70px;
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+    /*.logement-description, .logement-equipments {
+
+    }*/
+}
