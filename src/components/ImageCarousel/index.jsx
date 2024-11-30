@@ -15,10 +15,17 @@ function ImageCarousel({ images }) {
 
     return (
         <div className="image-carousel">
-            <button className="carousel-button-prev" onClick={prevImage}>❮</button>
+            {images.length > 1 && (
+                <>
+                <button className="carousel-button prev" onClick={prevImage}>∟</button>
+                <button className="carousel-button next" onClick={nextImage}>∟</button>
+                </>
+            )}
             <img src={images[currentIndex]} alt={`Logement ${currentIndex + 1}`}
             className="carousel-image" />
-            <button className="carousel-button-next" onClick={nextImage}>❯</button>            
+            <div className="image-counter">
+                {currentIndex + 1}/{images.length}
+            </div>         
         </div>
     )
 

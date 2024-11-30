@@ -1,13 +1,8 @@
 @import '../../assets/mixins.scss';
 
 .card-list-container {
-    height: (3 * 335px); /*calcul en fonction de la hauteur des vignettes */
-    overflow-y: auto; /*défilement vertical*/
-    scroll-snap-type: y mandatory; /*alignement auto au début du conteneur lors du défilement*/
     border-radius: 20px;
-
-    @media (min-width: 1240px) {
-        height: calc(2 * 340px + 50px);
+     @media (min-width: 1240px) {
         background-color: #f6f6f6;
         scroll-snap-align: center;
         padding-left: 40px;
@@ -19,8 +14,7 @@
 .card-list {
     display: flex;
     flex-direction: column;
-    
-
+    height: minmax();
     @media (min-width: 1240px) {
         display: grid;
         grid-template-columns: repeat(3,1fr);

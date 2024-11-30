@@ -1,0 +1,68 @@
+@import '../../assets/mixins.scss';
+
+.collapse {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    
+
+    .collapse-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FF6060;
+        color: #FFFFFF;
+        padding: 5px 15px;
+        cursor: pointer;
+        &.open {
+            border-radius: 5px;
+        }
+        @media (min-width: 1204px) {
+            border-radius: 10px;
+            padding: 10px 10px;
+        }
+        h2 {
+            margin: 0;
+            font-size: 13px;
+            font-weight: 700;
+            @media (min-width: 1204px) {
+                font-size: 18px;
+            }
+        }
+        .collapse-icon {
+            transform: rotate(135deg);
+            transition: transform 0.3s ease;
+            font-size: 16px;
+            font-weight: 700;
+            @media (min-width: 1204px) {
+                font-size: 24px;
+            }
+        }
+        &.open .collapse-icon {
+            transform: rotate(-45deg);                
+        }
+    }
+    .collapse-content {
+        font-size: 13px;
+        font-weight: 700px;
+        padding: 9px 12px;
+        p {
+            margin: 0;
+        }
+        @media (min-width: 1204px) {
+            font-size: 18px;
+            background-color: #f6f6f6;
+            padding: 18px 24px;
+        }
+        ul {
+            font-size: 14px;
+            font-weight: 400px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            @media (min-width: 1204px) {
+                font-size: 18px;
+            }
+        }
+    }
+}
