@@ -14,12 +14,10 @@
 .card-list {
     display: flex;
     flex-direction: column;
-    height: minmax();
     @media (min-width: 1240px) {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-gap: 50px 60px;
         grid-auto-rows: minmax(340px, auto);
-
     }
 }

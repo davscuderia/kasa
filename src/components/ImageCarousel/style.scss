@@ -1,4 +1,5 @@
 @import '../../assets/mixins.scss';
+@import '../../assets/variables.scss';
 
 .image-carousel {
     position: relative;
@@ -7,7 +8,7 @@
         object-fit: cover;
     }
     .carousel-button {
-        color: white;
+        color: $secondary-color-text;
         position: absolute;
         top: 50%;
         transform: rotate(45deg) translateY(-20%);
@@ -28,7 +29,7 @@
         @media (min-width: 1240px) {
             display: block;
             background-color: rgba(255, 255, 255, 0);
-            color: #ffffff;
+            color: $secondary-color-text;
             font-size: 18px;
             font-weight: 500;
             position: absolute;

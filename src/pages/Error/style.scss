@@ -1,4 +1,5 @@
 @import '../../assets/mixins.scss';
+@import '../../assets/variables.scss';
 
 .error-page {
 display: flex;
@@ -8,7 +9,7 @@ align-items: center;
 height: 100%;
 text-align: center;
 padding: 0 20px;
-color: #FF6060;
+color: $primary-color-text-and-components;
 margin-bottom: 110px;
     
     h1 {
