@@ -2,22 +2,22 @@
 
 .card-list-container {
     border-radius: 20px;
-     @media (min-width: 1240px) {
+    max-width: 100%;
+    box-sizing: border-box;
+    @media (min-width: 1240px) {
         background-color: #f6f6f6;
         scroll-snap-align: center;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 40px;
     }
 }
 
 .card-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
     @media (min-width: 1240px) {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-gap: 50px 60px;
-        grid-auto-rows: minmax(340px, auto);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
