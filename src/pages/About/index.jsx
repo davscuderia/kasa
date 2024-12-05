@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../../components/Banner';
 import Collapse from "../../components/Collapse"
 import aboutBackground from '../../assets/about-banner.webp';
+import "./style.scss"
 
 function About() {
     

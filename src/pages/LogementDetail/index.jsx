@@ -1,6 +1,6 @@
 import React from "react"
 import { Navigate, useParams } from 'react-router-dom'
-import logements from '../../logements.json'
+import logements from '../../Datas/logements.json'
 import ImageCarousel from "../../components/ImageCarousel"
 import Rating from "../../components/Rating"
 import Collapse from "../../components/Collapse"
